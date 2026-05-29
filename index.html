@@ -12,18 +12,18 @@
 
     @media (orientation: portrait) {
       body {
-        font-size: 26px; /* увеличиваем базовый шрифт */
+        font-size: 36px; /* увеличиваем базовый шрифт */
       }
       h1 {
-        font-size: 35px; /* заголовок крупнее */
+        font-size: 55px; /* заголовок крупнее */
       }
       #country {
-        font-size: 35px; /* название страны крупнее */
+        font-size: 55px; /* название страны крупнее */
       }
       button {
         display: block;
         width: 100%;
-        font-size: 24px; /* текст кнопки крупнее */
+        font-size: 36px; /* текст кнопки крупнее */
         padding: 20px;
         margin: 10px 0;
         box-sizing: border-box;
@@ -274,7 +274,7 @@
     const countryInfo = flags[currentIndex];
     const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(countryInfo.country)}`;
     document.getElementById("country").innerHTML =
-            `${countryInfo.country}<br><span style="font-size:14px;"><a href="${mapsUrl}" target="_blank">Открыть в Google Maps</a></span>`;
+            `${countryInfo.country}<br><span style="font-size:20px;"><a href="${mapsUrl}" target="_blank">Открыть в Google Maps</a></span>`;
   }
 </script>
 
