@@ -11,25 +11,28 @@
     #country { margin-top: 20px; font-size: 20px; font-weight: bold; color: darkblue; }
 
     @media (orientation: portrait) {
+      body {
+        font-size: 26px; /* увеличиваем базовый шрифт */
+      }
+      h1 {
+        font-size: 35px; /* заголовок крупнее */
+      }
+      #country {
+        font-size: 35px; /* название страны крупнее */
+      }
+      button {
+        display: block;
+        width: 100%;
+        font-size: 24px; /* текст кнопки крупнее */
+        padding: 20px;
+        margin: 10px 0;
+        box-sizing: border-box;
+      }
       img {
         width: 100%;
         height: auto;
         max-width: 100%;
       }
-      .buttons {
-        display: flex;
-        flex-direction: column; /* кнопки в колонку */
-        gap: 12px;              /* расстояние между ними */
-      }
-      button {
-        width: 100%;            /* на всю ширину */
-        font-size: 24px;        /* крупный текст */
-        padding: 20px;          /* большие отступы */
-        margin: 0;              /* убираем лишние отступы */
-        box-sizing: border-box; /* чтобы ширина учитывала padding */
-      }
-      #country { font-size: 28px; }
-      h1 { font-size: 30px; }
     }
 
 
