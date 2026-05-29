@@ -10,12 +10,28 @@
     button { margin: 10px; padding: 10px 20px; font-size: 16px; }
     #country { margin-top: 20px; font-size: 20px; font-weight: bold; color: darkblue; }
 
-    @media (max-width: 600px) {
-      img { width: 90%; height: auto; }
-      button { font-size: 20px; padding: 15px 25px; }
-      #country { font-size: 24px; }
-      h1 { font-size: 26px; }
+    @media (orientation: portrait) {
+      img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: column; /* кнопки в колонку */
+        gap: 12px;              /* расстояние между ними */
+      }
+      button {
+        width: 100%;            /* на всю ширину */
+        font-size: 24px;        /* крупный текст */
+        padding: 20px;          /* большие отступы */
+        margin: 0;              /* убираем лишние отступы */
+        box-sizing: border-box; /* чтобы ширина учитывала padding */
+      }
+      #country { font-size: 28px; }
+      h1 { font-size: 30px; }
     }
+
 
   </style>
 </head>
