@@ -9,6 +9,14 @@
     .buttons { margin-top: 20px; }
     button { margin: 10px; padding: 10px 20px; font-size: 16px; }
     #country { margin-top: 20px; font-size: 20px; font-weight: bold; color: darkblue; }
+
+    @media (max-width: 600px) {
+      img { width: 90%; height: auto; }
+      button { font-size: 20px; padding: 15px 25px; }
+      #country { font-size: 24px; }
+      h1 { font-size: 26px; }
+    }
+
   </style>
 </head>
 <body>
@@ -220,7 +228,7 @@
     {code: "sz", country: "Эсватини"}
   ];
 
-  let currentIndex = 0;
+  let currentIndex = Math.floor(Math.random() * flags.length); // сразу случайная страна
 
   function showFlag() {
     document.getElementById("flag").src = `https://flagcdn.com/w320/${flags[currentIndex].code}.png`;
