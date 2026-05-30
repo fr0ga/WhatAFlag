@@ -12,28 +12,38 @@
 
     @media (orientation: portrait) {
       body {
-        font-size: 36px; /* увеличиваем базовый шрифт */
+        font-size: 36px;
       }
       h1 {
-        font-size: 55px; /* заголовок крупнее */
+        font-size: 55px;
       }
       #country {
-        font-size: 55px; /* название страны крупнее */
+        font-size: 55px;
       }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   /* центрируем кнопки */
+        justify-content: center;
+        margin-top: 30px;      /* отступ сверху, чтобы не липли к флагу */
+      }
+
       button {
-        display: block;
-        width: 100%;
-        font-size: 36px; /* текст кнопки крупнее */
+        width: 80%;            /* аккуратная ширина */
+        font-size: 36px;
         padding: 20px;
         margin: 10px 0;
         box-sizing: border-box;
       }
+
       img {
         width: 100%;
         height: auto;
         max-width: 100%;
       }
     }
+
 
 
   </style>
